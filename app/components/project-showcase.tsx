@@ -157,13 +157,13 @@ export function ProjectShowcase() {
 
               <div className="p-5 bg-[#070A14] border-t border-[#00F0FF]/25 flex gap-3">
                 <Button onClick={() => setSelectedProject(null)} variant="outline" className="flex-1 rounded-full border-[#00F0FF]/30 text-slate-300 hover:bg-[#00F0FF]/15 hover:text-[#00F0FF] font-mono font-bold h-11 transition-all">
-                  CLOSE SPEC
+                  CLOSE
                 </Button>
                 
                 {selectedProject.type === 'Web' && selectedProject.desc.match(/https?:\/\/[^\s)]+/) ? (
                   <Button onClick={() => window.open(selectedProject.desc.match(/https?:\/\/[^\s)]+/)?.[0], "_blank", "noopener,noreferrer")} className="flex-[1.5] rounded-full bg-[#00F0FF] hover:bg-[#00d2ff] text-[#070A14] font-mono font-black shadow-[0_0_20px_rgba(0,240,255,0.4)] h-11">
                     <Globe className="w-4 h-4 mr-2" />
-                    LAUNCH SITE
+                    VISIT SITE
                   </Button>
                 ) : selectedProject.type !== 'Web' && (
                   <Button onClick={() => window.open("https://wa.me/6285899987772", "_blank", "noopener,noreferrer")} className="flex-[1.5] rounded-full bg-gradient-to-r from-[#FF007F] to-[#9D4EDD] hover:opacity-90 text-white font-mono font-black shadow-[0_0_20px_rgba(255,0,127,0.4)] h-11">
