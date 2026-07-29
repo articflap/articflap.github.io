@@ -47,7 +47,7 @@ export default function Home() {
             
             <div className="relative p-1 rounded-full bg-[#0B1021] border border-[#00F0FF]/60 shadow-[0_0_30px_rgba(0,240,255,0.4)]">
               <Avatar className="w-32 h-32 border-2 border-[#00F0FF] bg-[#070A14]">
-                <AvatarImage src="/mascot.webp" alt="Articflap Profile" className="object-cover" />
+                <AvatarImage src="/mascot.webp?v=2" alt="Articflap Profile" className="object-cover" />
                 <AvatarFallback className="text-3xl font-black bg-[#0B1021] text-[#00F0FF]">AF</AvatarFallback>
               </Avatar>
             </div>
