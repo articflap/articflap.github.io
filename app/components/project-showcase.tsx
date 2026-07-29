@@ -85,13 +85,6 @@ export function ProjectShowcase() {
                   
                   {/* Cyber Grid & Glowing Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070A14] via-[#070A14]/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300" />
-                  
-                  {/* Corner Tech Tag */}
-                  <div className="absolute top-3 right-3 px-2.5 py-1 bg-[#070A14]/80 border border-[#00F0FF]/40 rounded-lg backdrop-blur-md">
-                    <span className="text-[9px] font-mono font-bold text-[#00F0FF] tracking-wider uppercase">
-                      [{project.type}]
-                    </span>
-                  </div>
 
                   {/* Caption Area */}
                   <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col justify-end gap-2">
@@ -145,7 +138,7 @@ export function ProjectShowcase() {
                     </DialogTitle>
                     <div className="text-[#00F0FF] text-xs font-mono font-bold mb-2.5 flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#00F0FF] animate-pulse"></span>
-                      [{selectedProject.type} MODULE]
+                      {selectedProject.type} Application
                     </div>
                     <div className="flex flex-wrap gap-1.5">
                       {selectedProject.tech.map((tech, j) => (
