@@ -51,14 +51,14 @@ export default function ParticlesBackground() {
       },
       particles: {
         color: {
-          value: ["#7452E8", "#C9E252", "#9C85F0"],
+          value: ["#00F0FF", "#FF007F", "#9D4EDD", "#00F0FF"],
         },
         links: {
-          color: "#7452E8",
+          color: "#00F0FF",
           distance: 140,
           enable: true,
-          opacity: 0.18,
-          width: 1,
+          opacity: 0.35,
+          width: 1.2,
         },
         move: {
           direction: "none",
@@ -74,16 +74,16 @@ export default function ParticlesBackground() {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 85,
         },
         opacity: {
-          value: 0.5,
+          value: 0.6,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1.5, max: 4.5 },
         },
       },
       detectRetina: true,
@@ -97,7 +97,7 @@ export default function ParticlesBackground() {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 z-0 pointer-events-none"
       />
     );
   }
